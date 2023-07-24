@@ -9,7 +9,7 @@ dev:
 prod:
 	rm -rf .terraform*
 	git pull
-	terrafile -f env-prod/Te rrafile
+	terrafile -f env-prod/Terrafile
 	terraform init -backend-config=env-prod/backend.tfvars
 	terraform apply -auto-approve -var-file=env-prod/main.tfvars
 
