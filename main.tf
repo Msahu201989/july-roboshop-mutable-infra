@@ -1,5 +1,4 @@
 module "vpc" {
-  source = ""
+  source = "./vendor/modules"
 }
 
-variable "ver" {}
