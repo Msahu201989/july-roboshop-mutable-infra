@@ -17,6 +17,6 @@ module "vpc" {
 #  env                       = "var.env"
 #}
 
-output "merged" {
-  value = merge()
+output "app_private_subnets" {
+  value = module.vpc.private_subnets
 }
