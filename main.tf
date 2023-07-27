@@ -11,12 +11,13 @@ module "vpc" {
   private_zone_id           = var.private_zone_id
 }
 
-#module "docdb" {
-#  source                    = "./vendor/modules/docdb"
-#  docdb                     = "var.docdb"
-#  env                       = "var.env"
-#}
-
-output "app_private_subnets" {
-  value = local.app_private_subnets[*].id
+module "docdb" {
+  source                    = "./vendor/modules/docdb"
+  docdb                     = "var.docdb"
+  env                       = "var.env"
+  subnets                 = local.database_private_subnets[*].id
 }
+
+#output "app_private_subnets" {
+#  value = local.app_private_subnets[*].id
+#}
