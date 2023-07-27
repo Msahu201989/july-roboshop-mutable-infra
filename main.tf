@@ -16,3 +16,7 @@ module "vpc" {
 #  docdb                     = "var.docdb"
 #  env                       = "var.env"
 #}
+
+output "merged" {
+  value = merge(module.vpc.private_subnets.subnets)
+}
