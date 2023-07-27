@@ -17,6 +17,6 @@ module "vpc" {
 #  env                       = "var.env"
 #}
 
-output "app_private_subnets" {
+output "private_subnets" {
   value = module.vpc.private_subnets
 }
