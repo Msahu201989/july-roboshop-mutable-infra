@@ -5,3 +5,8 @@ vpc:
 docdb:
    source:  "https://github.com/Msahu201989/july-tf-module-docdb"
    version:  "main"
+
+
+rds:
+   source: "https://github.com/Msahu201989/july-tf-module-rds"
+   version: "main"
