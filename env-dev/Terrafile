@@ -1,3 +1,7 @@
 vpc:
   source:  "https://github.com/Msahu201989/july-tf-module-vpc"
   version: "main"
+
+docdb:
+   source:  "https://github.com/Msahu201989/july-tf-module-docdb"
+   version:  "main"

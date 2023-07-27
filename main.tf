@@ -10,3 +10,9 @@ module "vpc" {
   management_vpc            = var.management_vpc
   private_zone_id           = var.private_zone_id
 }
+
+#module "docdb" {
+#  source                    = "./vendor/modules/docdb"
+#  docdb                     = "var.docdb"
+#  env                       = "var.env"
+#}
