@@ -46,4 +46,3 @@ docdb = {
   }
 }
 
-env = "dev"
