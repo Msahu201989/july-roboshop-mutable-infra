@@ -18,5 +18,5 @@ module "vpc" {
 #}
 
 output "app_private_subnets" {
-  value = lookup(lookup(local.private_subnets, "subnets",null), "apps", null)
+  value = lookup(lookup(local.private_subnets, "subnets",null), "app", null)
 }
